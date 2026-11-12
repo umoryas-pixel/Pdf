@@ -79,7 +79,7 @@ with tab_split:
                 out_stream = io.BytesIO()
                 writer.write(out_stream)
                 out_stream.seek(0)
-                st.success(fتم استخراج الصفحات من {start_p} إلى {end_p} بنجاح!")
+                st.success(f"تم استخراج الصفحات من {start_p} إلى {end_p} بنجاح!")
                 st.download_button(
                     "⬇️ تحميل الصفحات المستخرجة",
                     data=out_stream,
